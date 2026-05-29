@@ -192,6 +192,10 @@ body {
   background: linear-gradient(135deg, #b450ff, #8030c0);
 }
 
+.gh-icon {
+  background: linear-gradient(135deg, #555, #222);
+}
+
 .card-body {
   flex: 1;
   min-width: 0;

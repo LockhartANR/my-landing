@@ -32,6 +32,15 @@
           </div>
           <span class="card-arrow">&rarr;</span>
         </a>
+
+        <a href="https://github.com/LockhartANR" target="_blank" class="card">
+          <div class="card-icon gh-icon">G</div>
+          <div class="card-body">
+            <h2 class="card-title">GitHub</h2>
+            <p class="card-desc">开源项目与代码</p>
+          </div>
+          <span class="card-arrow">&rarr;</span>
+        </a>
       </div>
     </main>
 
