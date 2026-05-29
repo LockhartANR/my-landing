@@ -25,12 +25,12 @@ npm run build    # 输出到 dist/
 npm run preview  # 本地预览构建产物
 ```
 
-构建产物 `dist/` 为纯静态文件，托管到任意 Web 服务器即可。配合 Nginx 反向代理实现多项目路由：
+构建产物 `dist/` 为纯静态文件，托管到任意 Web 服务器即可。配合 Nginx 反向代理实现子域名路由：
 
 ```
-/           → my-landing（本首页）
-/arknights/ → 明日方舟公招统计
-/blog/      → 博客
+lockhart.ren       → my-landing（本首页）
+ark.lockhart.ren   → 明日方舟公招统计
+blog.lockhart.ren  → 博客
 ```
 
 ## 许可

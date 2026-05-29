@@ -15,7 +15,7 @@
       </p>
 
       <div class="cards">
-        <a href="/arknights/" class="card">
+        <a href="https://ark.lockhart.ren" class="card">
           <div class="card-icon ak-icon">方</div>
           <div class="card-body">
             <h2 class="card-title">明日方舟公招统计</h2>
@@ -24,7 +24,7 @@
           <span class="card-arrow">&rarr;</span>
         </a>
 
-        <a href="/blog/" class="card">
+        <a href="https://blog.lockhart.ren" class="card">
           <div class="card-icon blog-icon">博</div>
           <div class="card-body">
             <h2 class="card-title">博客</h2>
