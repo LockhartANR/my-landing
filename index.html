@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lockhart</title>
+    <!--
+      内联 SVG 图标，与页面头像里的 "L" 保持一致。
+
+      原来这里指向 /favicon.ico，但仓库里从来没有这个文件，dist/ 下也不存在。
+      nginx 的 `try_files $uri $uri/ /index.html` 会把该请求兜底成首页 HTML，
+      于是 /favicon.ico 返回的是 200 + Content-Type: text/html —— 比 404 更隐蔽，
+      浏览器拿不到图像，标签页图标一直是坏的。
+      用 data URI 可以彻底摆脱这条 fallback 路径，且不新增二进制文件。
+    -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23409EFF'/%3E%3Ctext x='16' y='23' font-family='system-ui,-apple-system,Segoe UI,sans-serif' font-size='20' font-weight='700' fill='%23fff' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
